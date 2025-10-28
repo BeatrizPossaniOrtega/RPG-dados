@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolagem de Dados - Chamado da Morte</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nosifier&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>     </h1>
+    </header>
+    
+    <main>
+        <h2>Role seus Dados!</h2> 
+
+        <div>
+            <label for="tipo-dado">Escolha o tipo do dado:</label>
+            <select name="dado" id="tipo-dado">
+                <option value="" disabled selected>-- Selecione o dado --</option>
+                <option value="2">2 lados (d2)</option>
+                <option value="3">3 lados (d3)</option>
+                <option value="4">4 lados (d4)</option>
+                <option value="5">5 lados (d5)</option>
+                <option value="6">6 lados (d6)</option>
+                <option value="7">7 lados (d7)</option>
+                <option value="8">8 lados (d8)</option>
+                <option value="9">9 lados (d9)</option>
+                <option value="10">10 lados (d10)</option>
+                <option value="12">12 lados (d12)</option>
+                <option value="20">20 lados (d20)</option>
+                <option value="100">100 lados (d100)</option>
+            </select>
+        </div>
+        <div id="resultado-dado">
+            <img id="imagem-dado" 
+                 src="imagens-dados/d20.png"  
+                 alt="Dado para rolagem">                 
+            <p id="texto-resultado" style="margin: 0;"></p> 
+        </div>
+        <div id="mensagem-aviso" style="min-height: 20px; text-align: center; margin-bottom: 10px;"></div>
+                <button type="button" id="botao-rolar">Rolar!</button> 
+
+    </main>
+
+    <script src="pagina.js"></script> 
+</body>
+</html>
